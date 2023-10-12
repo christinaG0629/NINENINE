@@ -1,0 +1,29 @@
+斐波那契数列
+1.递归算法 更好用  具体学习
+2.递推
+
+递归表达式n=1 or n=2 _>1
+return1
+return fib(n-1)+fib(n-2)
+
+def fib(n):
+    if n==1 or n==2:
+        return 1
+    return fib(n-1)+fib(n-2)
+n= int(input("n:"))
+print(fib(n))
+
+递推
+
+n= int(input("n:"))
+fib=[1,1]
+for i in range(2,n): 从2遍历到n-1索引
+    fib.append(fib[i-1]+fib[i-2])
+    
+print(fib[n-1])
+递推就是把前两个写出来，第三个等于前两个
+
+
+
+
+
