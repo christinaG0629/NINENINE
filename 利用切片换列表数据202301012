@@ -1,0 +1,7 @@
+将一个列表的数据复制到另一个列表上
+list1=[]
+n=int(input("n:"))#输入n的个数
+for i in range(0,n):
+    list1.append(int(input()))
+list2=list1[:] #利用切片
+print(list2)
