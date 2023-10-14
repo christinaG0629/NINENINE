@@ -1,0 +1,57 @@
+判断素数101-200
+def panduansushu(n):
+    for i in range(2,n):
+        if n%i==0:
+            return False
+
+    return True
+total=0
+for i in range(101,201):
+    if panduansushu(i):
+        total +=1
+        print(i)
+print("the total is%d"%total)
+
+2到n-1有一个数能够被n整除的话   提升时间复杂度
+只需要找2-根号n 加1
+根号n不取
+记得加1
+
+import math
+def panduansushu(n):
+    for i in range(2,int(math.sqrt(n))+1):
+        if n%i==0:
+            return False
+
+    return True
+total=0
+for i in range(101,201):
+    if panduansushu(i):
+        total +=1
+        print(i)
+print("the total is%d"%total)
+
+
+
+101
+103
+107
+109
+113
+127
+131
+137
+139
+149
+151
+157
+163
+167
+173
+179
+181
+191
+193
+197
+199
+the total is21
