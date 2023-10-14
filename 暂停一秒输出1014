@@ -1,0 +1,8 @@
+暂停一秒输出
+import time
+s="私はアルバイトがありますので疲れます"
+for each in s:
+    print(each)
+    time.sleep(1)
+
+time.sleep関数
